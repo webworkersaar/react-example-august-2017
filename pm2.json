@@ -1,0 +1,18 @@
+[{
+  "name"         : "react:demo",
+  "script"       : "./index.js",
+  "error_file"   : "./log/error.log",
+  "out_file"     : "./log/app-out.log",
+  "watch"        : ["app", "src", "index.js"],
+  "ignore_watch" : ["**/*.pug"],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "max_restarts" : 1,
+  "merge_logs"   : true,
+  "env"          : {
+    "DEBUG"       : "app:*",
+    "DEBUG_COLORS": true,
+    "BABEL_DISABLE_CACHE": 1
+  }
+}]
